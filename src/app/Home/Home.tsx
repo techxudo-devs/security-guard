@@ -1,10 +1,15 @@
 import Main from '@/pages/Main/Main'
+// Niche wala path use karein agar file components/home folder mein hai
+
 
 const Home = () => {
   return (
-    <div>
-        <Main />
-    </div>
+    <main>
+        <div id="hero">
+          <Main />
+        </div>
+       
+    </main>
   )
 }
 
