@@ -185,7 +185,7 @@ const Packages: React.FC = () => {
                 <button 
                   className={`w-full py-4 rounded-2xl font-bold text-sm transition-all duration-300 cursor-pointer ${
                     pkg.popular 
-                      ? "bg-purple-600 text-white hover:bg-purple-700 shadow-xl shadow-purple-600/20" 
+                      ? "bg-purple-600 text-white hover:bg-purple-700 shadow-md shadow-purple-600/20" 
                       : "bg-white/5 text-white hover:bg-white/10 border border-white/10"
                   }`}
                 >
