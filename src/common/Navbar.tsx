@@ -105,10 +105,10 @@ export default function Navbar() {
             <button
               key={item.label}
               onClick={() => handleSectionNavigation(item.sectionId || "hero")}
-              className={`rounded-full px-4 py-2 transition-all duration-200 font-sora ${
+              className={`rounded-full px-4 py-2 transition-all cursor-pointer duration-200 font-sora ${
                 isItemActive(item)
                   ? "bg-white text-purple-600 shadow-sm"
-                  : "text-zinc-600 hover:text-purple-600"
+                  : "text-black hover:text-purple-600"
               }`}
             >
               {item.label}
