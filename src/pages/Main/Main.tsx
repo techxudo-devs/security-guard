@@ -1,8 +1,10 @@
-import React from 'react'
+import Hero from '@/components/Home/Hero'
 
 const Main = () => {
   return (
-    <div>Main</div>
+    <div>
+        <Hero />
+    </div>
   )
 }
 

@@ -185,7 +185,7 @@ export default function Navbar() {
                 : "2xl:w-[165px] md:w-[120px]"
             }`}
           /> */}
-          <h1 className="font-black italic text-2xl md:text-3xl 2xl:text-4xl tracking-tighter">
+          <h1 className="font-black italic text-2xl md:text-3xl 2xl:text-4xl tracking-tighter font-sora text-white">
             <span className="text-purple-600">secuti</span>guard
           </h1>
         </Link>
@@ -211,7 +211,7 @@ export default function Navbar() {
             ) : (
               <Link
                 key={item.label}
-                className={`rounded-full px-4 py-2 transition-all duration-200 ${
+                className={`rounded-full px-4 py-2 transition-all font-sora duration-200 ${
                   isItemActive(item)
                     ? "bg-white text-purple-600 shadow-sm"
                     : "text-black hover:text-purple-600"
@@ -251,7 +251,7 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <button className="rounded-full bg-purple-600 px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 cursor-pointer hover:bg-purple-700 shadow-lg shadow-purple-500/20">
+          <button className="rounded-full bg-purple-600 px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 cursor-pointer hover:bg-purple-700 shadow-lg shadow-purple-500/20 font-sora">
             Get Started Now
           </button>
         </div>
