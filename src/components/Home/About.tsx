@@ -1,6 +1,6 @@
 "use client";
-import React from 'react';
 import Image from 'next/image';
+import gunImage from "@/assets/ghora.avif"
 
 const About = () => {
   return (
@@ -16,7 +16,7 @@ const About = () => {
             <div className="relative aspect-square rounded-3xl overflow-hidden shadow-[0_0_50px_rgba(147,51,234,0.2)] border border-white/10 group">
               {/* Security Guard Image */}
               <Image 
-                src="/gallery/securityguard.jpg" 
+                src={gunImage}
                 alt="Security Guard"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
