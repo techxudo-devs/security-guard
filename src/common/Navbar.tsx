@@ -252,7 +252,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <button className="rounded-full bg-purple-600 px-6 py-3.5 text-sm font-bold text-white transition-all duration-300 cursor-pointer hover:bg-purple-700 shadow-lg shadow-purple-500/20 font-sora">
-            Get Started Now
+            Contact Us
           </button>
         </div>
       </nav>
