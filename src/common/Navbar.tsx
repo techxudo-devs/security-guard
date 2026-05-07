@@ -58,10 +58,10 @@ export default function Navbar() {
 
   const navItems: NavItem[] = [
     { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Services", href: "/services" },
-    { label: "Packages", href: "/pricing" },
-    { label: "Reviews", href: "/contact" },
+    { label: "About", href: "/" },
+    { label: "Services", href: "/" },
+    { label: "Packages", href: "/" },
+    { label: "Reviews", href: "/" },
   ];
 
   const resolveNavHref = (item: NavItem) =>
