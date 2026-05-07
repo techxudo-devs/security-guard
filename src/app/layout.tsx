@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/common/Navbar";
+import Footer from "@/common/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -17,7 +18,8 @@ const sora = Sora({
 
 export const metadata: Metadata = {
   title: "Security Guard",
-  description: "We provide security guard services to protect your property and ensure safety.",
+  description:
+    "We provide security guard services to protect your property and ensure safety.",
 };
 
 export default function RootLayout({
@@ -31,8 +33,10 @@ export default function RootLayout({
       className={`${poppins.variable} ${sora.variable} h-full antialiased`}
     >
       <Navbar />
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
-
