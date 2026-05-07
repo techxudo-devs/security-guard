@@ -29,6 +29,7 @@ const About: React.FC = () => {
             viewport={{ once: true }}
             className="relative"
           >
+            
             {/* Main Image Container */}
             <div className="relative aspect-[4/5] md:aspect-square rounded-[2.5rem] overflow-hidden border border-white/10 group shadow-2xl">
               <Image 
