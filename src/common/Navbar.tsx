@@ -95,7 +95,7 @@ export default function Navbar() {
         
         {/* Logo */}
         <Link href="/" className="shrink-0">
-          <h1 className="font-black italic text-2xl md:text-3xl tracking-tighter font-sora text-white">
+          <h1 className="font-black italic text-2xl md:text-3xl tracking-tighter font-sora md:text-white text-black">
             SS <span className="text-purple-600">Security</span>
           </h1>
         </Link>
