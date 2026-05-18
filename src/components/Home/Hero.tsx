@@ -44,7 +44,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-white text-center mt-10 px-4">
+      <div className="relative z-10 text-white text-center md:-mt-0 -mt-10 md:mt-10 px-4">
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold font-sora tracking-tight">
           Uncompromising Protection. <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400">
