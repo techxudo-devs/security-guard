@@ -66,7 +66,7 @@ const Packages: React.FC = () => {
       name: "Omni Command",
       tagline: "Total security for high-risk assets.",
       price: "Custom",
-      period: "Contact us",
+      period: "Contact",
       icon: <Globe size={24} className="text-cyan-400" />,
       gradient: "from-cyan-500/20 to-transparent",
       buttonText: "Inquire Now",

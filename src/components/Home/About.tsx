@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import gunImage from "@/assets/ghora.avif"; // Reusing hero image for consistency or using the provided asset
+import gunImage from "@/assets/about2.png"; // Reusing hero image for consistency or using the provided asset
 import { ShieldCheck, Target, Zap, Award, CheckCircle2 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -36,7 +36,7 @@ const About: React.FC = () => {
                 src={gunImage}
                 alt="Professional Security Guard"
                 fill
-                className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80"
+                className="object-cover transition-transform duration-1000 group-hover:scale-110 opacity-60 group-hover:opacity-80 object-top"
                 priority
               />
               {/* Glass Overlay with HUD elements */}
@@ -54,7 +54,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Experience Card */}
-            <div className="absolute -top-6 -right-6 md:top-12 md:-right-12 bg-[#0A0A0A] border border-white/10 p-8 rounded-3xl shadow-2xl hidden sm:block group hover:border-purple-500/50 transition-colors duration-500">
+            {/* <div className="absolute -top-6 -right-6 md:top-12 md:-right-12 bg-[#0A0A0A] border border-white/10 p-8 rounded-3xl shadow-2xl hidden sm:block group hover:border-purple-500/50 transition-colors duration-500">
               <div className="flex flex-col items-center">
                 <span className="text-5xl font-black text-white font-sora tracking-tighter mb-1">15+</span>
                 <span className="text-purple-500 font-bold text-[10px] uppercase tracking-wider">Years of Trust</span>
@@ -64,7 +64,7 @@ const About: React.FC = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Abstract HUD Ring */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-white/5 rounded-full pointer-events-none animate-spin-slow"></div>

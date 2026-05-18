@@ -51,6 +51,7 @@ export default function Navbar() {
     { label: "Home", sectionId: "hero" },
     { label: "About", sectionId: "about" },
     { label: "Services", sectionId: "services" },
+    { label: "Gallery", sectionId: "gallery" },
     { label: "Packages", sectionId: "pricing" },
     { label: "Reviews", sectionId: "reviews" },
   ];
@@ -68,7 +69,7 @@ export default function Navbar() {
 
   useEffect(() => {
     if (!isHomePage) return;
-    const sectionIds = ["hero", "about", "services", "pricing", "reviews", "contact"];
+    const sectionIds = ["hero", "about", "services", "gallery", "pricing", "reviews", "contact"];
     const updateActiveSection = () => {
       const viewportAnchor = window.scrollY + 140;
       let closestSection = "hero";

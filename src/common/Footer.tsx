@@ -35,9 +35,9 @@ const Footer: React.FC = () => {
       { name: "Risk Assessment", href: "#" },
     ],
     legal: [
-      { name: "Privacy Policy", href: "#" },
-      { name: "Terms of Service", href: "#" },
-      { name: "Cookie Policy", href: "#" },
+      { name: "Privacy", href: "#" },
+      { name: "Terms", href: "#" },
+      { name: "Cookie", href: "#" },
       { name: "Compliance", href: "#" },
     ],
   };
