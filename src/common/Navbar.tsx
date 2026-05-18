@@ -52,7 +52,7 @@ export default function Navbar() {
     { label: "About", sectionId: "about" },
     { label: "Services", sectionId: "services" },
     { label: "Packages", sectionId: "pricing" },
-    { label: "Reviews", sectionId: "contact" },
+    { label: "Reviews", sectionId: "reviews" },
   ];
 
   const isItemActive = (item: NavItem) => {
@@ -68,7 +68,7 @@ export default function Navbar() {
 
   useEffect(() => {
     if (!isHomePage) return;
-    const sectionIds = ["hero", "about", "services", "pricing", "contact"];
+    const sectionIds = ["hero", "about", "services", "pricing", "reviews", "contact"];
     const updateActiveSection = () => {
       const viewportAnchor = window.scrollY + 140;
       let closestSection = "hero";
@@ -95,7 +95,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <h1 className="font-black italic text-2xl md:text-3xl tracking-tighter font-sora text-white">
-            <span className="text-purple-600">secuti</span>guard
+            SS <span className="text-purple-600">Security</span>
           </h1>
         </Link>
 
@@ -128,7 +128,10 @@ export default function Navbar() {
 
         {/* CTA Button */}
         <div className="hidden md:block">
-          <button className="rounded-full bg-purple-600 px-6 py-3 text-sm font-bold text-white hover:bg-purple-700 transition-all font-sora shadow-lg shadow-purple-500/20">
+          <button 
+            onClick={() => handleSectionNavigation("contact")}
+            className="rounded-full bg-purple-600 px-6 py-3 text-sm font-bold text-white hover:bg-purple-700 transition-all font-sora shadow-lg shadow-purple-500/20 cursor-pointer"
+          >
             Contact Us
           </button>
         </div>

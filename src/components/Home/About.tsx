@@ -44,7 +44,7 @@ const About: React.FC = () => {
               
               <div className="absolute bottom-8 left-8 right-8 p-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl">
                 <p className="text-white font-sora text-sm italic font-light leading-relaxed">
-                  "At Security Sentinel, we don't just observe; we protect. Our protocols are designed for preemptive defense and rapid containment."
+                  "At SS Security, we don't just observe; we protect. Our protocols are designed for preemptive defense and rapid containment."
                 </p>
                 <div className="mt-4 flex items-center gap-3">
                   <div className="h-1 w-12 bg-purple-500 rounded-full"></div>
@@ -103,9 +103,9 @@ const About: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.2 }}
-                className="text-gray-400 text-base font-light leading-normal font-sora max-w-xl"
+                className="text-gray-400 text-sm md:text-base font-light leading-normal font-sora max-w-xl"
               >
-                Security Sentinel provides comprehensive protection strategies for complex environments. 
+                SS Security provides comprehensive protection strategies for complex environments. 
                 Our approach integrates military-grade personnel with cutting-edge surveillance technology 
                 to create an impenetrable perimeter around your assets.
               </motion.p>

@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-10 bg-black relative overflow-hidden border-t border-white/5">
+    <section id="contact" className="w-full py-10 bg-black relative overflow-hidden border-t border-white/5">
       {/* Background Decorative Glows */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/5 blur-[120px] rounded-full translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/5 blur-[120px] rounded-full -translate-x-1/2 translate-y-1/2"></div>
@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-white font-bold text-lg font-sora mb-1">Email Us</h4>
                   <p className="text-gray-400 text-sm font-light">Contact our strategy team at</p>
-                  <a href="mailto:contact@securitysentinel.com" className="text-purple-400 font-bold text-sm hover:underline">contact@securitysentinel.com</a>
+                  <a href="mailto:contact@sssecurity.com" className="text-purple-400 font-bold text-sm hover:underline">contact@sssecurity.com</a>
                 </div>
               </div>
 
@@ -177,7 +177,7 @@ const Contact: React.FC = () => {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder="John Doe"
-                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-xs md:text-sm"
                     />
                   </div>
                   {/* Email */}
@@ -190,7 +190,7 @@ const Contact: React.FC = () => {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder="john@example.com"
-                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-xs md:text-sm"
                     />
                   </div>
                 </div>
@@ -205,7 +205,7 @@ const Contact: React.FC = () => {
                       value={formData.phone}
                       onChange={handleChange}
                       placeholder="+1 (000) 000-0000"
-                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-xs md:text-sm"
                     />
                   </div>
                   {/* Service Dropdown */}
@@ -216,7 +216,7 @@ const Contact: React.FC = () => {
                       required
                       value={formData.service}
                       onChange={handleChange}
-                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white appearance-none focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-sm"
+                      className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white appearance-none focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-xs md:text-sm"
                     >
                       <option value="" disabled className="bg-black text-gray-500">Select a Service</option>
                       {services.map((service) => (
@@ -236,7 +236,7 @@ const Contact: React.FC = () => {
                     onChange={handleChange}
                     rows={4}
                     placeholder="How can we protect your assets?"
-                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-sm resize-none"
+                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-4 text-white placeholder:text-gray-700 focus:border-purple-500/50 focus:bg-white/10 outline-none transition-all duration-300 font-sora text-xs md:text-sm resize-none"
                   ></textarea>
                 </div>
 
@@ -244,7 +244,7 @@ const Contact: React.FC = () => {
                 <button 
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:scale-98 cursor-pointer transition-all duration-500 flex items-center justify-center gap-3 group disabled:opacity-70 disabled:cursor-not-allowed"
+                  className="w-full py-5 bg-gradient-to-r from-purple-600 to-blue-600 text-white font-bold rounded-lg hover:scale-98 cursor-pointer transition-all duration-500 flex items-center justify-center gap-3 group disabled:opacity-70 disabled:cursor-not-allowed md:text-base text-sm"
                 >
                   {isSubmitting ? (
                     <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
@@ -271,7 +271,7 @@ const Contact: React.FC = () => {
                     </div>
                     <h3 className="text-3xl font-bold text-white font-sora mb-2">Inquiry Deployed</h3>
                     <p className="text-gray-400 max-w-sm leading-normal">
-                      Thank you for contacting Security Sentinel. One of our strategy agents will reach out to you shortly.
+                      Thank you for contacting SS Security. One of our strategy agents will reach out to you shortly.
                     </p>
                     <button 
                       onClick={() => setIsSubmitted(false)}

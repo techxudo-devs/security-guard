@@ -11,6 +11,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa6";
 
 interface Service {
   id: number;
@@ -82,7 +83,7 @@ const Services: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-10 bg-black relative overflow-hidden">
+    <section id="services" className="w-full py-10 bg-black relative overflow-hidden">
       {/* Subtle Background Glows */}
       <div className="absolute top-1/4 left-0 w-[400px] h-[400px] bg-purple-600/5 blur-[100px] rounded-full"></div>
       <div className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-blue-600/5 blur-[100px] rounded-full"></div>
@@ -119,7 +120,7 @@ const Services: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="mt-6 text-gray-400 max-w-3xl text-lg font-light leading-normal font-sora"
+            className="mt-6 text-gray-400 max-w-3xl text-sm md:text-base lg:text-lg font-light leading-normal font-sora"
           >
             We combine high-stakes expertise with advanced technology to deliver 
             tailored security services that protect your most valuable assets.
@@ -160,10 +161,10 @@ const Services: React.FC = () => {
 
                 <div className="mt-8 pt-6 border-t border-white/5 flex items-center justify-between">
                   <span className="text-xs font-bold text-gray-600 uppercase tracking-wide group-hover:text-purple-500 transition-colors">
-                    Learn More
+                    Contact Us
                   </span>
                   <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-gray-500 group-hover:bg-purple-600 group-hover:text-white transition-all duration-300">
-                    <ArrowRight size={18} />
+                    <FaWhatsapp size={18} />
                   </div>
                 </div>
               </div>
@@ -179,7 +180,17 @@ const Services: React.FC = () => {
           transition={{ delay: 0.5 }}
           className="mt-10 flex flex-col items-center"
         >
-          <button className="px-8 py-4 bg-white rounded-full text-purple-600 font-bold text-sm uppercase font-sora transition-all duration-300 cursor-pointer hover:scale-97">
+          <button 
+            onClick={() => {
+              const section = document.getElementById("contact");
+              if (section) {
+                const headerOffset = 100;
+                const top = section.getBoundingClientRect().top + window.scrollY - headerOffset;
+                window.scrollTo({ top, behavior: "smooth" });
+              }
+            }}
+            className="px-8 py-4 bg-white rounded-full text-purple-600 font-bold text-sm uppercase font-sora transition-all duration-300 cursor-pointer hover:scale-97"
+          >
             Contact Us
           </button>
         </motion.div>

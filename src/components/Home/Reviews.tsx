@@ -117,13 +117,13 @@ const Reviews: React.FC = () => {
   };
 
   return (
-    <section className="w-full py-10 bg-black overflow-hidden relative border-t border-white/5">
+    <section id="reviews" className="w-full py-10 bg-black overflow-hidden relative border-t border-white/5">
       <div className="container mx-auto px-4">
 
         {/* Header */}
         <div className="flex flex-col items-center mb-10 text-center">
           <span className="text-purple-500 font-semibold tracking-wider uppercase text-sm mb-3">Testimonials</span>
-          <h2 className="text-3xl sm:text-5xl font-bold text-white font-sora tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-bold text-white font-sora tracking-tight">
             Trusted by Industry Leaders
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mt-6 rounded-full"></div>
@@ -239,8 +239,8 @@ const Reviews: React.FC = () => {
               </div>
 
               {/* Scrollable Body */}
-              <div className="p-8 overflow-y-auto custom-scrollbar">
-                <p className="text-gray-300 text-lg leading-normal whitespace-pre-line italic font-sora">
+              <div className="p-6 md:p-8 overflow-y-auto custom-scrollbar">
+                <p className="text-gray-300 text-sm md:text-base lg:text-lg leading-normal whitespace-pre-line italic font-sora">
                   "{selectedReview.text}"
                 </p>
               </div>

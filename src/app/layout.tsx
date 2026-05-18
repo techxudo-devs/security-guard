@@ -17,9 +17,9 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Security Guard",
+  title: "SS Security",
   description:
-    "We provide security guard services to protect your property and ensure safety.",
+    "We provide elite security guard services to protect your property and ensure safety.",
 };
 
 export default function RootLayout({

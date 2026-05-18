@@ -44,7 +44,7 @@ const Packages: React.FC = () => {
     },
     {
       id: 2,
-      name: "Elite Sentinel",
+      name: "Elite SS Security",
       tagline: "Comprehensive protection for corporations.",
       price: "$5,999",
       period: "per month",
@@ -66,7 +66,7 @@ const Packages: React.FC = () => {
       name: "Omni Command",
       tagline: "Total security for high-risk assets.",
       price: "Custom",
-      period: "Contact for Pricing",
+      period: "Contact us",
       icon: <Globe size={24} className="text-cyan-400" />,
       gradient: "from-cyan-500/20 to-transparent",
       buttonText: "Inquire Now",
@@ -82,7 +82,7 @@ const Packages: React.FC = () => {
   ];
 
   return (
-    <section className="w-full py-10 bg-black relative overflow-hidden">
+    <section id="pricing" className="w-full py-10 bg-black relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-purple-600/5 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2"></div>
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-blue-600/5 blur-[120px] rounded-full translate-y-1/2 -translate-x-1/2"></div>
@@ -112,7 +112,7 @@ const Packages: React.FC = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
-            className="mt-6 text-gray-400 max-w-2xl text-lg font-light leading-normal"
+            className="mt-6 text-gray-400 max-w-2xl text-sm md:text-base lg:text-lg font-light leading-normal"
           >
             Choose the level of protection that fits your operational needs. From essential monitoring to total site command.
           </motion.p>
@@ -127,7 +127,7 @@ const Packages: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className={`relative flex flex-col p-8 rounded-3xl border ${
+              className={`relative flex flex-col p-6 md:p-8 rounded-3xl border ${
                 pkg.popular 
                   ? "bg-[#0c0c0c] border-purple-500/50 shadow-[0_0_40px_-10px_rgba(168,85,247,0.2)]" 
                   : "bg-[#050505] border-white/5 hover:border-white/20"
@@ -138,7 +138,7 @@ const Packages: React.FC = () => {
 
               {pkg.popular && (
                 <div className="absolute top-6 right-8">
-                  <span className="bg-purple-600 text-white text-[10px] font-black uppercase tracking-widest px-3 py-1 rounded-full shadow-lg shadow-purple-600/40">
+                  <span className="bg-purple-600 text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full shadow-md shadow-purple-600/40">
                     Most Selected
                   </span>
                 </div>
@@ -204,7 +204,7 @@ const Packages: React.FC = () => {
           transition={{ delay: 0.5 }}
           className="mt-10 flex flex-col items-center"
         >
-          <div className="px-6 py-3 bg-white/5 border border-white/5 rounded-full flex items-center gap-3">
+          <div className="px-4 md:px-6 py-3 bg-white/5 border border-white/5 rounded-full flex items-center gap-3">
             <div className="flex -space-x-2">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="w-6 h-6 rounded-full border border-black bg-gray-800 flex items-center justify-center text-[10px] text-gray-500 font-bold">

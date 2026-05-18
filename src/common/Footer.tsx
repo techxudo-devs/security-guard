@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
                 <Shield className="text-white" size={20} />
               </div>
               <span className="text-2xl font-bold text-white font-sora tracking-tighter">
-                Security<span className="text-purple-500">Sentinel</span>
+                SS<span className="text-purple-500">Security</span>
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm font-light">
@@ -135,7 +135,7 @@ const Footer: React.FC = () => {
               </div>
               <div className="flex items-center gap-3 text-gray-500 text-sm">
                 <Mail size={16} className="text-purple-500" />
-                <span>hq@securitysentinel.com</span>
+                <span>hq@sssecurity.com</span>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2 text-gray-600 text-xs font-medium">
             <ShieldCheck size={14} className="text-purple-900" />
-            <span>&copy; {currentYear} Security Sentinel International. ISO 27001 Certified.</span>
+            <span>&copy; {currentYear} SS Security. ISO 27001 Certified.</span>
           </div>
           
           <div className="flex items-center gap-4">
